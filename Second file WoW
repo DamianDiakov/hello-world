@@ -27,3 +27,14 @@ if decision == "Y" or decision == "y":
 else: print("I guess we wont be playing")
 
 
+print("How many cats do you own")
+CatNum = input()
+CatNum = int(CatNum)
+try:
+  if CatNum < 0:
+    print("cat murderer :( ")
+  elif CatNum >= 4:
+    print("Wow you have a lot of cats")
+  else: print("You have some cats")
+except TypeError: print("The number of cats in NUMBERS!!!! not letters please")
+
