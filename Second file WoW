@@ -1,0 +1,29 @@
+Im gonna paste someting random
+import random
+print("Hello! What is your name?")
+name = input()
+print("Hi",name,"lets play a guessing game.")
+print("Im going to think of a number between 1 and 20 and you are going to guess it")
+print("Do you want to play?: (y/n) ",end ='')
+decision = input()
+
+if decision == "Y" or decision == "y":     
+  print("Lets play then\n")
+  Number = random.randint(1,20)
+  try:
+    for i in range(1,7):
+      print("Pick a number ",end = "")
+      guessedNumber = int(input())
+      if guessedNumber == Number:
+        print("Congratulations",name,"you guessed right in only",i,"tries")
+        break
+      elif i == 6: 
+        print("Unfortunately you couldnt guess my number in",i,"tries\n","The number was",Number)
+      elif guessedNumber > Number:
+        print("My number is Lower")
+      elif guessedNumber < Number:
+        print("My number is Higher")
+  except ValueError: print("Use numbers (1,2,3...) instead of letters (a,A,b,B....) ")
+else: print("I guess we wont be playing")
+
+
