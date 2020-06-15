@@ -1,5 +1,5 @@
 # hello-world
-Learning how to make a repository 
+how to make a repository 
 wow :D 
 Adding new stuff so i can test this thing
 Honestly it looks very confusing and everything looks the same
